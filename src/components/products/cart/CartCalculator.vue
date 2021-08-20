@@ -1,7 +1,7 @@
 <template>
   <div class="cart-calculator">
     <h4 class="d-flex justify-content-between align-items-center mb-3">
-      <span class="text-muted">Your cart</span>
+      <span class="text-muted">Tu compra</span>
       <span class="badge badge-primary badge-pill">{{
         cartProducts.length
       }}</span>
@@ -16,13 +16,13 @@
           <h6 class="my-0">{{ product.productName }}</h6>
         </div>
         <span class="text-muted" style="width: 120px"
-          >₹ {{ product.productPrice }}</span
+          >$ {{ product.productPrice }}</span
         >
       </li>
       <hr />
       <li class="list-group-item d-flex justify-content-between">
-        <span>Total (INR)</span>
-        <strong>₹ {{ totalValue.toFixed(2) }}</strong>
+        <span>Total (COP)</span>
+        <strong>$ {{ totalValue.toFixed(2) }}</strong>
       </li>
     </ul>
   </div>

@@ -2,18 +2,18 @@
   <div class="productFilter">
     <div id="prdfilter">
       <h4 class="d-flex mb-3">
-        <span class="text-muted">Filters:</span>
+        <span class="text-muted">Filtros:</span>
       </h4>
       <div
         class="form-group createProduct"
         v-if="loggedUser && loggedUser.isAdmin"
       >
         <button class="btn buttonGreen-outline" @click="openCreateModal">
-          Create New Product
+          Crear un producto nuevo
         </button>
       </div>
       <div class="form-group">
-        <label for="filterPrdCty">By Category:</label>
+        <label for="filterPrdCty">Por Categoria:</label>
         <select
           class="form-control"
           id="filterPrdCty"
@@ -29,7 +29,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="filterPrdSlr">By Seller:</label>
+        <label for="filterPrdSlr">Por Marca:</label>
         <select
           class="form-control"
           id="filterPrdSlr"
@@ -45,11 +45,7 @@
         </select>
       </div>
       <ul class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        
       </ul>
     </div>
     <create-product ref="createProduct" />

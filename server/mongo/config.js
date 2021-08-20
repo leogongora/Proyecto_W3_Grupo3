@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://read-only:mlabreadonly@hifdth-track.x6ijp.mongodb.net/vue-shop",
+  "mongodb+srv://LGM_01:Usuario1@cluster0.5ehav.mongodb.net/fogata",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

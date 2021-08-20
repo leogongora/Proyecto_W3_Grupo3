@@ -2,19 +2,23 @@
     <div class="productForm">
         <form id="productCU" @submit="actionProduct" v-if="!loading">
                 <p v-if="errors.length">
-                  <b>Please correct the following error(s):</b>
+                  <b>Por favor corregir los siguientes errores:</b>
                   <ul>
                     <li v-for="error in errors" :key="error">{{ error }}</li>
                   </ul>
                 </p>
 
               <div class="form-group">
-                <label for="productName">Product Name</label>
+                <label for="productName">Nombre del Producto</label>
                 <input type="text" class="form-control" id="productName" v-model="product.productName" name="productName" aria-describedby="emailHelp" placeholder="Enter Product Name">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted">Escriba el nombre que aparecerá en el Menú</small>
               </div>
               <div class="form-group">
-                <label for="productCategory">Product Category</label>
+                <label for="productName">Descripción del Producto</label>
+                <input type="text" class="form-control" id="productName" v-model="product.productDescription" name="productDescription" placeholder="Enter Product Descriptión">
+              </div>
+              <div class="form-group">
+                <label for="productCategory">Categoría del producto</label>
                 <select class="form-control"  v-if="product.productCategory !== 'Create New'" id="productCategory" name="productCategory" v-model="product.productCategory">
                     <option 
                       v-for="(category, index) in categories" :key="index" 
@@ -22,10 +26,14 @@
                       >{{category.productCategory}}
                     </option>
                 </select>
-                <input type="password" class="form-control" id="productCategroyDummy"  v-if="product.productCategory === 'Create New'" placeholder="Password" name="productCategroyDummy" v-model="product.productCategroyDummy">
+                <input type="text" class="form-control" id="productCategroyDummy"  v-if="product.productCategory === 'Create New'" placeholder="Seleccione Categoría" name="productCategroyDummy" v-model="product.productCategroyDummy">
               </div>
               <div class="form-group">
-                <label for="productSeller">Product Seller</label>
+                <label for="productCategory">Precio del producto</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="Precio del producto" name="productPrice">
+              </div>
+              <div class="form-group">
+                <label for="productSeller">Fabricante</label>
                 <select class="form-control"  v-if="product.productSeller !== 'Create New'" id="productSeller" name="productSeller" v-model="product.productSeller">
                     <option 
                       v-for="(seller, index) in sellers" :key="index" 
@@ -33,13 +41,13 @@
                       >{{seller.productSeller}}
                     </option>
                 </select>
-                <input type="password" class="form-control" id="productSellerDummy"  v-if="product.productSeller === 'Create New'" placeholder="Password" name="productSellerDummy" v-model="product.productSellerDummy">
+                <input type="text" class="form-control" id="productSellerDummy"  v-if="product.productSeller === 'Create New'" placeholder="Password" name="productSellerDummy" v-model="product.productSellerDummy">
               </div>
               <div class="row">
                 <div class="col">
                   <div class="form-group">
                     <label for="isBestProduct">Best Product</label>
-                    <input type="checkbox" class="form-control" id="isBestProduct" name="isBestProduct" v-model="product.isBestProduct" placeholder="Password">
+                    <input type="checkbox" class="form-control" id="isBestProduct" name="isBestProduct" v-model="product.isBestProduct" placeholder="Seleccione Marca">
                   </div>
                 </div>
                 <div class="col">
@@ -51,13 +59,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="productRating">Product Rating</label>
-                    <input type="password" class="form-control" id="productRating" placeholder="Password">
+                    <input type="number" class="form-control" id="productRating" placeholder="De 1 a 5">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="productImage">Product Image</label>
-                <input type="text" class="form-control" id="productImage" v-model="product.productImage" placeholder="Product Image URL">
+                <input type="url" class="form-control" id="productImage" v-model="product.productImage" placeholder="Product Image URL">
               </div>
               <br>
               <button type="submit" class="btn buttonGreen">Save changes</button>

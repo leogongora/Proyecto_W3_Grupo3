@@ -12,7 +12,7 @@
             width="72"
             height="72"
           />
-          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+          <h1 class="h4 mb-3 font-weight-normal">Por favor registrese aquí</h1>
           <label for="email" class="sr-only">Email address</label>
           <input
             type="email"
@@ -42,12 +42,12 @@
         </form>
         <p class="mt-3 text-muted">
           <span v-if="isSignUp">
-            Already a member?
+            Ya eres cliente?
             <a href="javascript:;;" @click="toggleForm">Sign in</a>
           </span>
           <span v-if="!isSignUp">
-            New to ikismail?
-            <a href="javascript:;;" @click="toggleForm">Create an Account</a>
+            Nuevo en la Fogata?
+            <a href="javascript:;;" @click="toggleForm">Crea una cuenta</a>
           </span>
         </p>
       </div>

@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <main>
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <img alt="Vue logo" src="./assets/logo.png" width="50px" />
+        <img alt="Vue logo" src="./assets/fogata.jpeg" width="50px" />
         <button
           class="navbar-toggler"
           type="button"
@@ -17,18 +17,15 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>
+              <router-link to="/" class="nav-link">Inicio</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/products" class="nav-link"
-                >All Products</router-link
+                >Menu </router-link
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
+              <router-link to="/about" class="nav-link">Acerca de</router-link>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -77,38 +74,17 @@
     <footer class="container-fluid footer text-left mt-3">
       <p class="mr-auto">
         Developed by:
-        <strong>Mohammed Ismail</strong>
+        <strong>G3-W3</strong>
       </p>
       <div style="float: right">
-        <a href="mailto:ikismail7@gmail.com" style="margin-right: 10px">
+        <a href="mailto:lafogataitaliana@gmail.com" style="margin-right: 10px">
           <i
             class="fa fa-envelope-open"
             aria-hidden="true"
             style="font-size: 20px"
           ></i>
         </a>
-        <a
-          href="https://github.com/ikismail"
-          target="_blank"
-          style="margin-right: 10px"
-        >
-          <i
-            class="fa fa-github"
-            aria-hidden="true"
-            style="font-size: 20px"
-          ></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ikismail7/"
-          target="_blank"
-          style="margin-right: 10px"
-        >
-          <i
-            class="fa fa-linkedin"
-            aria-hidden="true"
-            style="font-size: 20px"
-          ></i>
-        </a>
+        
       </div>
     </footer>
   </div>

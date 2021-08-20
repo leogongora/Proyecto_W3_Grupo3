@@ -49,12 +49,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(history({ index: "/index.html" }));
+//app.use(history({ index: "/index.html" }));
 
 app.use("/api", [api, productApi, authApi, ShippingDetailApi]);
 
 // Initialize the app.
-var server = app.listen(process.env.PORT || 8080, function() {
+var server = app.listen(process.env.PORT || 5000, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });

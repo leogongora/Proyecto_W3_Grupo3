@@ -18,17 +18,17 @@
                   class="list-group-item d-flex justify-content-between lh-condensed"
                 >
                   <div>
-                    <h6 class="my-0">Product Price</h6>
+                    <h6 class="my-0">Precio</h6>
                   </div>
                   <span class="text-muted" style="color: crimson !important"
-                    >₹ {{ product.productPrice }}</span
+                    >$ {{ product.productPrice }}</span
                   >
                 </li>
                 <li
                   class="list-group-item d-flex justify-content-between lh-condensed"
                 >
                   <div>
-                    <h6 class="my-0">Product Seller</h6>
+                    <h6 class="my-0">Marca</h6>
                   </div>
                   <span class="text-muted" style="color: crimson !important">{{
                     product.productSeller
@@ -36,30 +36,30 @@
                 </li>
               </ul>
               <button class="btn btn-primary" v-on:click="addToCart(product)">
-                Add to Cart
+                Agregar al Carrito de Compras
               </button>
             </div>
           </div>
         </div>
         <div class="col-sm-8">
           <div class="product-detail">
-            <h5 class="product-head">Product Details</h5>
+            <h5 class="product-head">Detalle del Producto</h5>
             <table class="table" cellspacing="0" style="max-height: 28px">
               <tbody>
                 <tr>
-                  <th scope="row">Product Name</th>
+                  <th scope="row">Nombre del producto</th>
                   <td>{{ product.productName }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">Product Description</th>
+                  <th scope="row">Descripción</th>
                   <td>{{ product.productDescription }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">Product Category</th>
+                  <th scope="row">Categoría</th>
                   <td>{{ product.productCategory }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">Product Rating</th>
+                  <th scope="row">Calificación</th>
                   <td>
                     <div class="stars-outer">
                       <div class="stars-inner"></div>
@@ -74,7 +74,7 @@
       <nav aria-label="breadcrumb ">
         <ol class="breadcrumb">
           <li class="breadcrumb-item active" aria-current="page">
-            Similar Products
+            Productos similares
           </li>
         </ol>
       </nav>

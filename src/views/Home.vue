@@ -2,20 +2,20 @@
   <div class="home-component">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <img alt="Vue logo" src="../assets/logo.png" width="100px" />
+        <img alt="Vue logo" src="../assets/fogata.jpeg" width="250px" />
         <h3 class="display-5 ">
-          <span style="color:#42b983">ikismail - VueShop</span>
+          <span style="color:#42b983">Restaurante la Fogata Italiana</span>
         </h3>
-        <p class="lead">A ShoppingCart (Ecommerce) Application using Vue.js.</p>
+        <p class="lead">Un lugar para tener lo mejor de la comida italiana a domicilio</p>
       </div>
     </div>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page">
-          Our Best Products
+          Nuestros productos destacados
         </li>
         <li class="ml-auto" aria-current="page">
-          <router-link to="/products">Show All</router-link>
+          <router-link to="/products">Mostrar todo</router-link>
         </li>
       </ol>
     </nav>
@@ -23,10 +23,10 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item active " aria-current="page">
-          Our Top Products
+          Nuestros platos favoritos
         </li>
         <li class="ml-auto" aria-current="page">
-          <router-link to="/products">Show All</router-link>
+          <router-link to="/products">Mostrar todo</router-link>
         </li>
       </ol>
     </nav>

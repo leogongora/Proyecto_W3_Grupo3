@@ -17,7 +17,7 @@
               class="btn btn-sm btn-outline-secondary"
               v-on:click="navigateProductDetail(item)"
             >
-              View
+              Ver
             </button>
 
             <button
@@ -26,7 +26,7 @@
               v-on:click="updateEditProduct(item, item._id)"
               v-if="loggedUser && loggedUser.isAdmin"
             >
-              Edit
+              Editar
             </button>
           </div>
           <small class="text-muted footerIcons">

@@ -10,7 +10,7 @@
                   </ul>
           </p>-->
           <div class="form-group">
-            <label for="productName">Address 1</label>
+            <label for="productName">Dirección 1</label>
             <input
               type="text"
               class="form-control"
@@ -21,7 +21,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="productCategory">Address 2</label>
+            <label for="productCategory">Dirección 2</label>
             <input
               type="password"
               class="form-control"
@@ -31,7 +31,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="productSeller">Country</label>
+            <label for="productSeller">Pais</label>
             <input
               type="password"
               class="form-control"
@@ -43,7 +43,7 @@
           <div class="row">
             <div class="col">
               <div class="form-group">
-                <label for="productRating">Zip code</label>
+                <label for="productRating">Codigo postal</label>
                 <input
                   type="password"
                   class="form-control"
@@ -54,7 +54,7 @@
             </div>
           </div>
           <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your data with anyone else.</small
+            >Nosotros nunca compartiremos su información con nadie.</small
           >
           <br />
         </form>
@@ -63,13 +63,13 @@
         <cart-calculator ref="cartCalculator"></cart-calculator>
         <ul class="list-group mb-3">
           <router-link to="/products" class="btn btn-primary mt-2 text-white"
-            >Continue Shipping</router-link
+            >Seguir Comprando</router-link
           >
           <a
             href="javascript:;;"
             class="btn btn-success mt-2 text-white"
             @click="createShippingDetail"
-            >Save & Pay</a
+            >Guardar & Pagar</a
           >
         </ul>
       </div>

@@ -46,8 +46,8 @@
           <template v-else>
             <div class="error-template container">
               <h1>Oops!</h1>
-              <h2>No Products Found</h2>
-              <div class="error-details">Your cart is empty</div>
+              <h2>No se encontraron productos</h2>
+              <div class="error-details">Tu carrito esta vacío</div>
               <div class="error-actions">
                 <a class="btn text-white">
                   <span class="glyphicon glyphicon-envelope"></span>
@@ -64,7 +64,7 @@
         <cart-calculator ref="cartCalculator"></cart-calculator>
         <ul class="list-group mb-3">
           <router-link to="/products" class="btn btn-primary mt-2 text-white"
-            >Continue Shipping</router-link
+            >Seguir Comprando</router-link
           >
           <router-link to="/checkout" class="btn btn-danger mt-2 text-white"
             >Checkout</router-link
