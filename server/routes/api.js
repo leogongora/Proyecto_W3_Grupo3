@@ -25,7 +25,7 @@ router
     user.fullName = req.body.firstName + " " + req.body.lastName;
     user.password = req.body.password;
     user.email = req.body.email;
-    user.isAdmin = false;
+    user.isAdmin = true;
     user.createdOn = new Date().toLocaleString();
 
     // save the bear and check for errors
